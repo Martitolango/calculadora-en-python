@@ -85,14 +85,14 @@ while True:
             if numero2.isdigit():
                 numero2 = int(numero2)
                 break
-            else:
-                print("Eso no es un numero... vuelve a probar")
+            elif numero2 == "0":
+                print("Eso no es un numero válido... vuelve a probar")
                 continue
-                
-        resultado = numero1 / numero2
-        resto = numero1 % numero2
-        print(f"Dividiendo {numero1} entre {numero2} da: {resultado} y el resto es: {resto}")
-    
+            else:
+                print("Eso no es un caracter válido... vuelve a probar")
+                continue
+
     if opcion == "5":
         print("Adiós...")
         exit()
+        break
